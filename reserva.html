@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Sabor</title>
+    <title>Document</title>
     <style>
-        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(209, 207, 207);
+        }
         @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Frijole&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
         *{
@@ -26,23 +32,36 @@
               font-family: "Playwrite GB S", cursive;
 
         }
-        
-        header{
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .um{
             border-top: 15px rgb(0, 0, 0) solid;
             background-color: orange;
             text-align: center;
-          }
+        }
+        .dois{
+            background-color: rgb(255, 187, 1);
+            height: 220px;
+            width: 15%; 
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .dois img{
+            width: 100%;
+            border-top-left-radius: 20px;
+        }
         .mei{
             background-color: black;
             width: 100%;
             height: 40px;
             color: aquamarine;
             line-height: 40px;
-        }
-        a:hover{
-   
-            color: rgb(14, 168, 116);
-      
         }
         .roda{
             width: 100%;
@@ -54,53 +73,10 @@
             border-bottom: 30px rgb(0, 0, 0) solid;
             line-height: 35px;
         }
-
-    main{
-    display: flex;/*O Flexbox organiza os elementos*/
-    flex-wrap: wrap;/*Permite quebrar linha. Quando não cabe mais na tela os elementos vão para baixo automaticamente.*/
-    justify-content: center;/*Centraliza os elementos. Com isso tudo fica no meio da página.*/
-    gap: 20px;/*Cria espaço ENTRE os cards.
-
-Exemplo:
-
-Mesa1     Mesa2*/
-    padding: 20px;
-}
-
-.mesa{
-    background: white;
-    width: 250px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    text-align: center;
-}
-
-button{
-    background: orange;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;/*Quando passa o mouse seta vira mãozinha*/
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-button:hover{
-    background: green;/*Muda a cor de fundo do botão para verde quando mouse passa por cima.*/
-    transform: scale(1.05); /*Faz o botão aumentar de tamanho.*/
-}
-
-.livre{
-    color: green;
-    font-weight: bold;/*deixa o texto em negrito*/
-    display: block;
-    margin: 10px 0;
-}
     </style>
 </head>
 <body>
+    <div class="um">
     <header>
         <div class="header">
              <img src="img/Logo. SITEMAP.png" width="200">
@@ -113,83 +89,82 @@ button:hover{
             <a href="sobrenós.html"><td>SOBRE NÓS</td></a>
         </div>
     </header>
-    <hr>
-    <main>
-<h1>Mesas Disponíveis</h1>
+    </div>
 
-<div class="mesa">
-    <h2>Mesa 1</h2>
-    <p>Para 2 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 2</h2>
-    <p>Para 2 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 3</h2>
-    <p>Para 4 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 4</h2>
-    <p>Para 4 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 5</h2>
-    <p>Para 4 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 6</h2>
-    <p>Para 4 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 7</h2>
-    <p>Para 2 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 8</h2>
-    <p>Para 6 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 9</h2>
-    <p>Para 6 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
-<div class="mesa">
-    <h2>Mesa 10</h2>
-    <p>Para 4 pessoas</p>
-    <span class="livre">Disponível</span>
-    <button><a href="nome.html">Agendar</a></button>
-</div>
+    <div class="container">
+
+          <div class="dois">
+                <img src="img/images (7).jpg" width="450px">
+                <h3> MESA 1</h3>
+                <button>RESERVAR</button>
+          </div>
+
+          <div class="dois">
+                <img src="img/images (7).jpg"  width="450px">
+                <h3> MESA 1</h3>
+                <button>RESERVAR</button>
+          </div>
+
+          <div class="dois">
+                <img src="img/images (7).jpg" width="450px">
+                <h3> MESA 1</h3>
+                <button>RESERVAR</button>
+          </div>
+
+            <div class="dois">
+                <img src="img/images (7).jpg" width="450px">
+                <h3> MESA 1</h3>
+                <button>RESERVAR</button>
+            </div>
+
+            <div class="dois">
+                <img src="img/images (7).jpg" width="450px">
+                <h3> MESA 1</h3>
+                  <button>RESERVAR</button>
+          </div>
+
+    </div>
+
+    <div class="container">
+
+          <div class="dois">
+                <img src="img/images (7).jpg" width="150px">
+                <h3> MESA 1</h3>
+                <button>RESERVAR</button>
+          </div>
+
+          <div class="dois">
+                <img src="img/images (7).jpg" width="150px">
+                <h3> MESA 1</h3>
+                <button>RESERVAR</button>
+          </div>
+
+          <div class="dois">
+                <img src="img/images (7).jpg" width="150px">
+                <h3> MESA 1</h3>
+                <button>RESERVAR</button>
+          </div>
+
+            <div class="dois">
+                <img src="img/images (7).jpg" width="150px">
+                <h3> MESA 1</h3>
+                <button>RESERVAR</button>
+            </div>
+
+            <div class="dois">
+                <img src="img/images (7).jpg" width="150">
+                <h3> MESA 1</h3>
+                  <button>RESERVAR</button>
+          </div>
+
+    </div>
 
 
-<a href="index.html">Voltar</a>
-
-    </main>
-    <hr>
-    <footer>
         <div class="roda">
-        <p>Projeto Acadêmico</p>
-        <p>Telefone para contato com a loja= 14-99829-3867</p>
-        <p>Endereço da nossa loja= R. Conselheiro Dantas - Santa Cruz do Rio Pardo-Sp. Cep= 18900-079</p>
+            <p>Projeto Acadêmico</p>
+            <p>Telefone para contato com a loja= 14-99829-3867</p>
+            <p>Endereço da nossa loja= R. Conselheiro Dantas - Santa Cruz do Rio Pardo-Sp. Cep= 18900-079</p>
         </div>
-    </footer>
-  
+
 </body>
 </html>
