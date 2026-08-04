@@ -4,161 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Equipe</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #f2f2f3;
-    color: white;
-    padding: 40px 20px;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-}
-
-.titulo {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-
-/* CARD */
-.card {
-    display: flex;
-    align-items: center;
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #c24f02, #0f172a);
-    box-shadow: 0 10px 25px rgba(223, 3, 3, 0.5);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.02);
-}
-
-/* ZIG ZAG */
-.card:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-/* IMAGEM */
-.card img {
-    width: 180px;
-    height: 180px;
-    border-radius: 15px;
-    object-fit: cover;
-    margin: 0 20px;
-}
-
-/* TEXTO */
-.card-text {
-    max-width: 600px;
-}
-
-.card-text h2 {
-    margin-bottom: 10px;
-    color: #f66a06e5;
-}
-
-.card-text p {
-    opacity: 0.8;
-}
-
-/* BOTÃO */
-button {
-    margin-top: 10px;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 10px;
-    background: #38bdf8;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    background: #0ea5e9;
-}
-
-/* RESPONSIVO */
-@media(max-width: 768px) {
-    .card {
-        flex-direction: column !important;
-        text-align: center;
-    }
-
-    .card img {
-        margin-bottom: 15px;
-    }
-}
-</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div align="center">
+            <img src="img/Logo. SITEMAP.png" width="200">
+        </div>
+        <hr>
+        <div align="center">           
+           <a href="cardapio.html"><td>CARDAPIO</td></a>
+            <a href="reserva.html"><td>RESERVA</td></a>
+            <a href="agenda.html"><td>AGENDA</td></a> 
+            <a href="sobrenós.html"><td>SOBRE NÓS</td></a>
+        </div>
+    </header>
+    <hr>
+    <main>
 <body>
 
 <div class="container">
     <h1 class="titulo">Nossa Equipe</h1>
 
     <!-- CARD 1 -->
-    <div class="card">
-        <img src="img/Captura de tela 2026-08-04 085629.png">
-        <div class="card-text">
-            <h2>Murilo Souza</h2>
-            <p>Desenvolvedor front-end responsável pelo design e interatividade do projeto.</p>
-            <button onclick="mostrarMensagem('Murilo')">Ver mais</button>
-        </div>
+ 
+    <div class="card mb-3" style="max-width: 1200px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/Captura de tela 2026-08-04 085629.png" class="img-fluid rounded-start" alt="...">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">murilo souza</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- CARD 2 -->
-    <div class="card">
-        <img src="">
-        <div class="card-text">
-            <h2>giovanna mayra</h2>
-            <p>Designer responsável pela identidade visual e experiência do usuário.</p>
-            <button onclick="mostrarMensagem('Giovanna')">Ver mais</button>
-        </div>
+   
+    <div class="card mb-3" style="max-width: 1200px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/joao vitor.png" class="img-fluid rounded-start" alt="...">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">joao vitor</h5>
+        <p class="card-text">Meu nome é João Vitor. Sou uma pessoa que gosta de aprender coisas novas, principalmente sobre tecnologia e design. No meu tempo livre, gosto de jogar, ouvir música, assistir vídeos e passar tempo com amigos e família. Também gosto de criar e desenvolver novas ideias.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- CARD 3 -->
-    <div class="card">
-        <img src="">
-        <div class="card-text">
-            <h2>matheus </h2>
-            <p>Back-end developer focado em banco de dados e lógica do sistema.</p>
-            <button onclick="mostrarMensagem('Matheus')">Ver mais</button>
-        </div>
+    
+    <div class="card mb-3" style="max-width: 1200px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/miguelprojetointe.png" class="img-fluid rounded-start" alt="...">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">miguel rocha</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- CARD 4 -->
-    <div class="card">
-        <img src="img/miguelprojetointe.png" width="200" height="200">
-        <div class="card-text">
-            <h2>Miguel henrique rocha</h2>
-            <p>Gerente de projeto, organizando tarefas e garantindo prazos.</p>
-            <button onclick="mostrarMensagem('Miguel')">Ver mais</button>
-        </div>
+
+    <div class="card mb-3" style="max-width: 1200px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="" class="img-fluid rounded-start" alt="...">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">giovanna mayra</h5>
+        <p class="card-text">Meu nome é Giovanna Mayra Rodrigues Dutra. Gosto de aprender coisas novas, principalmente na área de design e criatividade. Tenho interesse em criar identidades visuais, logotipos e projetos gráficos. Também gosto de ouvir música, assistir filmes e séries, passar tempo com minha família e amigos e buscar novas inspirações para desenvolver minhas habilidades.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- CARD 5 -->
-    <div class="card">
-        <img src="img/joao vitor.png">
-        <div class="card-text">
-            <h2>João vitor navarro galdino</h2>
-            <p>Responsável pelos testes e qualidade do sistema.</p>
-            <button onclick="mostrarMensagem('João')">Ver mais</button>
-        </div>
+    
+    <div class="card mb-3" style="max-width: 1200px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="g" class="img-fluid rounded-start" alt="...">
     </div>
-
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">miguel rocha</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -166,6 +126,8 @@ function mostrarMensagem(nome) {
     alert("Você clicou no perfil de " + nome + "!");
 }
 </script>
-
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+ </script>
+ 
 </body>
 </html>
