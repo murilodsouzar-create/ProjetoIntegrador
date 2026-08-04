@@ -1,106 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Sabor</title>
-    <style>
-        
-        @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Frijole&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipe</title>
 
-        *{
-          margin: 0;
-          padding: 0;
-        }
-        a{
-            height: 40px;
-            line-height: 40px;
-            text-decoration: none;
-            padding: 20px;
-            color: green;
-             font-family: "Playwrite GB S", cursive;
-              font-weight: 900;
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        }
-        p{
-              font-family: "Playwrite GB S", cursive;
+body {
+    background: #f2f2f3;
+    color: white;
+    padding: 40px 20px;
+}
 
-        }
-        
-        header{
-            border-top: 15px rgb(0, 0, 0) solid;
-            background-color: orange;
-            text-align: center;
-          }
-        .mei{
-            background-color: black;
-            width: 100%;
-            height: 40px;
-            color: aquamarine;
-            line-height: 40px;
-        }
-        a:hover{
-   
-            color: rgb(14, 168, 116);
-      
-        }
-        .roda{
-            width: 100%;
-            height: 120px;
-            font-size: 20px;
-            text-align: center;   
-            background-color: orange;
-            border-top: 15px rgb(0, 0, 0) solid;
-            border-bottom: 30px rgb(0, 0, 0) solid;
-            line-height: 35px;
-        }
-    </style>
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+/* CARD */
+.card {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #c24f02, #0f172a);
+    box-shadow: 0 10px 25px rgba(223, 3, 3, 0.5);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* ZIG ZAG */
+.card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* IMAGEM */
+.card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+/* TEXTO */
+.card-text {
+    max-width: 600px;
+}
+
+.card-text h2 {
+    margin-bottom: 10px;
+    color: #f66a06e5;
+}
+
+.card-text p {
+    opacity: 0.8;
+}
+
+/* BOTÃO */
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+    .card {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .card img {
+        margin-bottom: 15px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <div class="header">
-             <img src="img/Logo. SITEMAP.png" width="200">
+
+<div class="container">
+    <h1 class="titulo">Nossa Equipe</h1>
+
+    <!-- CARD 1 -->
+    <div class="card">
+        <img src="img/Captura de tela 2026-08-04 085629.png">
+        <div class="card-text">
+            <h2>Murilo Souza</h2>
+            <p>Desenvolvedor front-end responsável pelo design e interatividade do projeto.</p>
+            <button onclick="mostrarMensagem('Murilo')">Ver mais</button>
         </div>
-        <hr>
-        <div class="mei">           
-           <a href="cardapio.html"><td>NOSSOS PRODUTOS</td></a>
-            <a href="reserva.html"><td>RESERVA</td></a>
-            <a href="agenda.html"><td>ESPECIAIS DO DIA</td></a> 
-            <a href="sobrenós.html"><td>SOBRE NÓS</td></a>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <img src="">
+        <div class="card-text">
+            <h2>giovanna mayra</h2>
+            <p>Designer responsável pela identidade visual e experiência do usuário.</p>
+            <button onclick="mostrarMensagem('Giovanna')">Ver mais</button>
         </div>
-    </header>
-    <hr>
-    <main>
-       <p>O Seu Sabor, inaugurado recentemente, já está conquistando o público com uma proposta que mistura tradição e criatividade. Uma das curiosidades do restaurante é que o cardápio foi inspirado em receitas de família, passadas de geração em geração, mas com um toque contemporâneo do chef. Pratos clássicos ganharam novas combinações de temperos e apresentações modernas, criando uma experiência que une memória afetiva e inovação.
+    </div>
 
-Outro detalhe interessante é que o nome “Seu Sabor” surgiu da ideia de que cada cliente pode personalizar alguns pratos, escolhendo ingredientes, molhos ou acompanhamentos. Assim, cada refeição pode ser montada de acordo com o gosto de quem está pedindo, tornando a experiência mais única e especial.
-
-Além disso, o espaço foi planejado para ser acolhedor e também instagramável, com uma decoração que valoriza elementos naturais. Temperos frescos, plantas e detalhes rústicos fazem parte do ambiente, reforçando a proposta do restaurante de valorizar ingredientes naturais e sabores autênticos. A iluminação e os espaços foram pensados para que os clientes possam aproveitar tanto a comida quanto o ambiente, tornando o momento da refeição ainda mais agradável.
-
-O restaurante também busca oferecer um atendimento próximo e amigável, fazendo com que cada cliente se sinta bem-vindo desde o momento em que entra. A ideia é que o Seu Sabor seja um lugar não apenas para comer, mas para reunir amigos, família e criar boas lembranças.</p>
-<br>
-<br>
-<hr>
-O projeto do restaurante foi desenvolvido pelos estudantes:</p>
-        
-        <p>João Vitor, 16 anos</p>
-        <p>Giovanna Mayra, 17 anos</p>
-        <p>Matheus Marchette, 16 anos</p>
-        <p>Miguel Rocha, 16 anos</p>
-<hr>
-<br>
-<br>
-        <a href="index.html">Voltar</a>
-
-    </main>
-    <hr>
-    <footer>
-        <div class="roda">
-        <p>Projeto Acadêmico</p>
-        <p>Telefone para contato com a loja= 14-99829-3867</p>
-        <p>Endereço da nossa loja= R. Conselheiro Dantas - Santa Cruz do Rio Pardo-Sp. Cep= 18900-079</p>
+    <!-- CARD 3 -->
+    <div class="card">
+        <img src="">
+        <div class="card-text">
+            <h2>matheus </h2>
+            <p>Back-end developer focado em banco de dados e lógica do sistema.</p>
+            <button onclick="mostrarMensagem('Matheus')">Ver mais</button>
         </div>
-    </footer>
-  
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+        <img src="img/miguelprojetointe.png" width="200" height="200">
+        <div class="card-text">
+            <h2>Miguel henrique rocha</h2>
+            <p>Gerente de projeto, organizando tarefas e garantindo prazos.</p>
+            <button onclick="mostrarMensagem('Miguel')">Ver mais</button>
+        </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="card">
+        <img src="img/joao vitor.png">
+        <div class="card-text">
+            <h2>João vitor navarro galdino</h2>
+            <p>Responsável pelos testes e qualidade do sistema.</p>
+            <button onclick="mostrarMensagem('João')">Ver mais</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function mostrarMensagem(nome) {
+    alert("Você clicou no perfil de " + nome + "!");
+}
+</script>
+
 </body>
 </html>
