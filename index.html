@@ -5,30 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seu Sabor</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <div class="header">
-      <img src="img/Logo. SITEMAP.png" width="200">
-    </div>
-    <hr>
-    <div class="mei">
-      <a href="cardapio.html">
-        <td>NOSSOS PRODUTOS</td>
-      </a>
-      <a href="reserva.html">
-        <td>RESERVA</td>
-      </a>
-      <a href="agenda.html">
-        <td>ESPECIAIS DO DIA</td>
-      </a>
-      <a href="sobrenós.html">
-        <td>SOBRE NÓS</td>
-      </a>
-    </div>
+
+    <header>
+      <div class="container1 text-center"> <img src="img/Logo. SITEMAP.png" width="180"> </div>
+
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container container1 justify-content-center">
+          <div class="navbar-nav corfont">
+
+            <a class="nav-link corfont" href="reserva.html">Reserva</a>
+            <a class="nav-link corfont" href="especiaisdodia.html">Especiais</a>
+            <a class="nav-link corfont" t href="sobrenós.html">Sobre Nós</a>
+            <a class="nav-link corfont" href="banda.html">Banda</a>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+
 
 
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -37,10 +38,10 @@
           <img src="img/alibba.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-        <img src="img/001 restaurante.jpg" class="d-block w-100" alt="...">
+          <img src="img/001 restaurante.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-        <img src="img/comida13.jpg"class="d-block w-100" alt="...">
+          <img src="img/comida13.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -58,58 +59,78 @@
 
 
     <hr>
-    <footer class="bg-black text-white pt-3 pb-3 mt-5">
 
-    <div class="container">
+    
+     <!-- FOOTER -->
 
-        <div class="row">
+    <footer class="bg-black  pt-3
+ pb-3 mt-5">
+        <div class="container">
+            <div class="row">
 
-            <div class="col-md-4 mb-4">
-                <h4 class="fw-bold">Seu Sabor 🍔</h4>
+                <!-- LOGO / SOBRE -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">Seu Sabor 🍔</h4>
+                    <p class="corfont">
+                        O melhor lugar para saborear hambúrgueres, pizzas e pastéis incríveis.
+                        Qualidade, sabor e rapidez em um só lugar!
+                    </p>
+                </div>
 
-                <p>
-                    O melhor lugar para saborear hambúrgueres, pizzas e pastéis incríveis.
-                    Qualidade, sabor e rapidez em um só lugar!
+                <!-- LINKS -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="cardapio.html" class="text-decoration-none ">Cardápio</a></li>
+                        <li><a href="reserva.html" class="text-decoration-none ">Reserva</a></li>
+                        <li><a href="especiaisdodia.html" class="text-decoration-none ">Especiais</a></li>
+                        <li><a href="sobrenos.html" class="text-decoration-none ">Sobre Nós</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTATO -->
+                <div class="col-md-4 mb-4 ">
+                    <h5 class="fw-bold">Contato</h5>
+                    <div class="corfont">
+                        <p class=" mb-1">📞 (14) 99829-3867</p>
+                        <p class=" mb-1">📍 Santa Cruz do Rio Pardo/SP</p>
+                        <p class="corfont">📧 contato@seusabor.com</p>
+                    </div>
+
+
+                    <!-- REDES SOCIAIS -->
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3 fs-5">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 fs-5">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 fs-5">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- LINHA FINAL -->
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0 ">
+                    © 2026 Seu Sabor - Todos os direitos reservados
                 </p>
             </div>
-
-            <div class="col-md-4 mb-4">
-
-                <h5 class="fw-bold">Navegação</h5>
-
-                <ul class="list-unstyled">
-                    <li><a href="cardapio.html" class="text-decoration-none text-white">Cardápio</a></li>
-                    <li><a href="reserva.html" class="text-decoration-none text-white">Reserva</a></li>
-                    <li><a href="agenda.html" class="text-decoration-none text-white">Especiais</a></li>
-                    <li><a href="sobrenos.html" class="text-decoration-none text-white">Sobre Nós</a></li>
-                </ul>
-
-            </div>
-
-            <div class="col-md-4 mb-4">
-
-                <h5 class="fw-bold">Contato</h5>
-
-                <p>📞 (14) 99829-3867</p>
-                <p>📍 Santa Cruz do Rio Pardo/SP</p>
-                <p>📧 contato@seusabor.com</p>
-
-            </div>
-
         </div>
 
-        <div class="text-center border-top pt-3">
-            <p class="mb-0">
-                © 2026 Seu Sabor - Todos os direitos reservados
-            </p>
-        </div>
+    </footer>
+     <!-- FOOTER -->
 
-    </div>
-
-</footer>
-
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+</body>
 
 </html>
